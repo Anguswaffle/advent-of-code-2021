@@ -1002,22 +1002,6 @@ const input = `000001110001
 // Converting string to array
 const inputArr = input.split(`\n`)
 
-testStr = `00100
-11110
-10110
-10111
-10101
-01111
-00111
-11100
-10000
-11001
-00010
-01010`
-
-const testArr = testStr.split(`\n`)
-
-
 // Part one of solution
 let gamma = '';
 let epsilon = '';
@@ -1043,7 +1027,7 @@ epsilon = parseInt(epsilon, 2);
 console.log(`The first answer is ${gamma * epsilon}`)
 
 
-// Part 2
+// Part two of solution
 
 let oxyArr = inputArr;
 let c02Arr = inputArr;
@@ -1071,17 +1055,9 @@ for (var i = 0; i < 12; i++) {
   if(oxyArr.length > 1) oxyArr = oxyArr.filter(input => input.at(i) === oxyModifier)
   
   if(c02Arr.length > 1) c02Arr = c02Arr.filter(input => input.at(i) === c02Modifier)
-
-  console.log(oxyArr)
-  console.log(c02Arr)
 }
 
 const oxyRating = parseInt(oxyArr[0], 2);
 const c02Rating = parseInt(c02Arr[0], 2);
-
-
-
-console.log(oxyRating)
-console.log(c02Rating)
 
 console.log(`The second answer is ${oxyRating * c02Rating}`)
