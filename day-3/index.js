@@ -1006,7 +1006,7 @@ const inputArr = input.split(`\n`)
 let gamma = '';
 let epsilon = '';
 
-for (var i = 0; i < 12; i++) {
+for (let i = 0; i < 12; i++) {
   let counter = [0, 0]
   inputArr.forEach(input => {
     if (input.at(i) === '0') counter[0]++;
@@ -1032,7 +1032,7 @@ console.log(`The first answer is ${gamma * epsilon}`)
 let oxyArr = inputArr;
 let c02Arr = inputArr;
 
-for (var i = 0; i < 12; i++) {
+for (let i = 0; i < 12; i++) {
   let oxyCounter = [0, 0]
   let c02Counter = [0, 0]
   oxyArr.forEach(input => {
