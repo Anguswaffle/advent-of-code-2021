@@ -1,8 +1,11 @@
-const fs = require('fs');
+const testInput = `7222221271
+6463754232
+3373484684
+4674461265
+1187834788
+1175316351
+8211411846
+4657828333
+5286325337
+5771324832`.split('\n').map(line => line.split('').map(num => parseInt(num, 10)));
 
-const input = fs.readFile('./input.txt', (err, data) => {
-  if(err) throw err;
-  return data.toString().split('\n')
-});
-
-console.log(input)
