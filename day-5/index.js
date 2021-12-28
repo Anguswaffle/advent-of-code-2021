@@ -498,20 +498,6 @@ const rawInput = `348,742 -> 620,742
 477,825 -> 477,343
 220,665 -> 351,796
 483,128 -> 376,128`
-
-
-const testInput = `0,9 -> 5,9
-8,0 -> 0,8
-9,4 -> 3,4
-2,2 -> 2,1
-7,0 -> 7,4 
-6,4 -> 2,0
-0,9 -> 2,9 
-3,4 -> 1,4 
-0,0 -> 8,8
-5,5 -> 8,2`
-
-const testArr = testInput.replaceAll(' -> ', ',').replaceAll('\n', ',').split(',')
 const inputArr = rawInput.replaceAll(' -> ', ',').replaceAll('\n', ',').split(',');
 
 // Parts 1 and 2

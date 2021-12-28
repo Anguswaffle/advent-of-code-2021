@@ -2,41 +2,6 @@
 var canvas = document.getElementById('tutorial');
 var ctx = canvas.getContext('2d');
 
-const testInput = `6,10
-0,14
-9,10
-0,3
-10,4
-4,11
-6,0
-6,12
-4,1
-0,13
-10,12
-3,4
-3,0
-8,4
-1,10
-2,14
-8,10
-9,0`.split('\n').map(line => line.split(',').map(num => Number(num)))
-
-const testInstructions = `y=7
-x=5`.split('\n').map(line => line.split('='))
-
-const instructionsInput = `x=655
-y=447
-x=327
-y=223
-x=163
-y=111
-x=81
-y=55
-x=40
-y=27
-y=13
-y=6`.split('\n').map(line => line.split('='))
-
 const input = `609,754
 1101,140
 1129,317
@@ -884,6 +849,19 @@ const input = `609,754
 455,746
 842,264
 818,358`.split('\n').map(line => line.split(',').map(num => Number(num)))
+
+const instructionsInput = `x=655
+y=447
+x=327
+y=223
+x=163
+y=111
+x=81
+y=55
+x=40
+y=27
+y=13
+y=6`.split('\n').map(line => line.split('='))
 
 const fold = (input, instructions) => {
 
