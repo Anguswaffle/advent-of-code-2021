@@ -1,6 +1,7 @@
+// Comment in the commented out lines and open index.html with live server to see answer to part 2
 
-var canvas = document.getElementById('tutorial');
-var ctx = canvas.getContext('2d');
+// var canvas = document.getElementById('tutorial');
+// var ctx = canvas.getContext('2d');
 
 const input = `609,754
 1101,140
@@ -888,16 +889,16 @@ const fold = (input, instructions) => {
   return input;
 }
 
-const draw = arr => {
-  arr.forEach(([x,y]) => {
-    ctx.fillRect(x,y,1,1)
-  })
-}
+// const draw = arr => {
+//   arr.forEach(([x,y]) => {
+//     ctx.fillRect(x,y,1,1)
+//   })
+// }
 
 const init = (input, instructions) => {
   const folded = fold(input, instructions);
   console.log(`The answer to part one is ${folded.length}`)
-  draw(folded)
+  // draw(folded)
 }
 
 init(input, instructionsInput)
